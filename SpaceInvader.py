@@ -132,7 +132,7 @@ while not sortir :
             #desplaçament de les naus enemigues
         if crash == False :
             #if projec == True :
-            y_proj += int(vel/2)
+            y_proj += vel
             if x_nau1 < - width * 2 :
                 canvDir = True
             if x_nau3 < (amplada+width) and canvDir == True:
