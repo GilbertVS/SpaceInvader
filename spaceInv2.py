@@ -194,7 +194,7 @@ def Spaceinvader2() :
                     x_ali16 += int(vel/5)
                     x_ali17 += int(vel/5)
                 #desplaçament dels nostres projectils
-                if keys[pygame.K_RETURN] :
+                if keys[pygame.K_RETURN] and pl_mort1 == False :
                     pygame.mixer.Sound.play(tret_so)
                     x_tret1 = x + height/2
                     y_tret1 -= vel * 2       
@@ -202,7 +202,7 @@ def Spaceinvader2() :
                     x_tret1 = x + height /2
                     y_tret1 = y + vel*3
 
-                if keys[pygame.K_SPACE] :
+                if keys[pygame.K_SPACE]  and pl_mort2 == False :
                     pygame.mixer.Sound.play(tret_so)
                     x_tret2 = x2 + height/2
                     y_tret2 -= vel * 2
@@ -313,7 +313,7 @@ def Spaceinvader2() :
                  if  cont_ali13 > 2 :
                      mort13  = True
                      score1 += 1
-            if x_ali12 < x_tret2 < x_ali12+width/2  and  y_ali12 < y_tret2< y_ali12+height  and mort16 == False and pl_mort2 == False:
+            if x_ali12 < x_tret2 < x_ali12+width/2  and  y_ali12 < y_tret2< y_ali12+height  and mort12 == False and pl_mort2 == False:
                  x_tret2 = x2 + height /2
                  y_tret2 = y2 + vel*3     
                  cont_ali12 += 1
